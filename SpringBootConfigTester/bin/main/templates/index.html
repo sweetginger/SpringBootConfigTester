@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>SpringBootTester</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Hello page</h1>
+	<p class="msg" th:text="${msg}">여기는 타임리프 샘플 페이지</p>
+	
+	<form action="/upload3" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file" />
+		<input type="text" name="username" />
+		<input type="submit" value="등록" />
+	</form>
+</body>
+</html>
